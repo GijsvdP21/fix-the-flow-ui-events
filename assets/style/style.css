@@ -8,9 +8,11 @@
   --pill: 2rem;
   --line: 0.1rem;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 2rem;
   padding: 0;
@@ -18,9 +20,11 @@ body {
   font-size: 2rem;
   background: var(--secondary);
 }
+
 section {
   max-width: 90vw;
 }
+
 a {
   display: inline-block;
   margin: 0.2em;
@@ -32,6 +36,7 @@ a {
   font-weight: normal;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--primary);
   border-color: var(--primary);
@@ -40,7 +45,7 @@ a:hover {
 /* UI Event Classes */
 
 /* Jump animation on the interaction link */
-a:nth-of-type(12) {
+a:nth-of-type(11) {
   position: relative;
   background: var(--highlight-secondary);
   color: var(--secondary);
@@ -58,24 +63,78 @@ a:nth-of-type(12) {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
+
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
   }
+
   50% {
     transform: scale(1.05, 0.95) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
 }
 
 /* Jouw animaties */
+
+/* animatie 1 */
+
+a:nth-of-type(1) {
+  transform-style: preserve-3d;
+  background-color: orangered;
+}
+
+/* animatie 2 */
+
+a:nth-of-type(2) {
+  background-color: green;
+}
+
+a:nth-of-type(2):hover {
+  transform: rotate(360deg);
+  transition: 1s ease-out;
+}
+
+/* animatie 3 */
+
+#and {
+  display: inline-block;
+  margin: 0.2em;
+  padding: 0.4em 0.8em;
+  color: var(--highlight-primary);
+  border: var(--line) solid var(--highlight-primary);
+  border-radius: var(--pill);
+  font-weight: normal;
+  text-decoration: none;
+  background-color: rgb(186, 0, 0);
+  cursor: pointer;
+}
+
+#and:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+a:nth-of-type(3) {
+  background-color: rgb(137, 116, 0);
+}
+
+
+a:nth-of-type(3):hover {
+  transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  transition: 4s;
+}
