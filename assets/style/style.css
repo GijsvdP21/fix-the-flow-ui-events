@@ -331,7 +331,7 @@ a:nth-of-type(8) {
 /* animatie 10*/
 
 a:nth-of-type(9) {
-  background-color: blue;
+  background: blue;
 }
 
 /* animatie 11*/
@@ -364,4 +364,26 @@ video {
 
 .none-display {
   display: none;
+}
+
+img {
+  display: none;
+}
+
+.open {
+  display: block;
+  width: 50%;
+}
+
+.nederland {
+  background: linear-gradient(to bottom, red 0%, red 33.3%, white 33.3%, white 66.7%, blue 66.7%, blue 100%) !important;
+}
+
+.italia {
+  background: linear-gradient(to right,
+      green 0% 33.3%,
+      white 33.3% 66.7%,
+      red 66.7% 100%) !important;
+  color: blue;
+  font-weight: bold;
 }

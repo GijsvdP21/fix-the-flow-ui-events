@@ -3,9 +3,28 @@ let video = document.querySelector('video')
 let code = document.querySelector('a:nth-of-type(19)')
 let tekst = document.querySelector('.tekst')
 let flow = document.querySelector('a:nth-of-type(7)')
+let user = document.querySelector('a:nth-of-type(8)')
+let image = document.querySelector('.SuperWOUT')
+let interface = document.querySelector('a:nth-of-type(9)')
+let events = document.querySelector('a:nth-of-type(10)')
+let userflow = document.querySelector('a:nth-of-type(12)')
+
+interface.addEventListener('click', nedVlag)
+
+function nedVlag() {
+  interface.classList.toggle('nederland')
+}
+
+events.addEventListener('click', itaVlag)
+
+function itaVlag() {
+  events.classList.toggle('italia')
+}
 
 flow.addEventListener('click', videoHandler)
 
+
+user.addEventListener('click', imgHandler)
 
 
 
@@ -141,3 +160,9 @@ function videoHandler() {
   video.paused ? video.play() : video.pause()
   tekst.classList.toggle('none-display')
 }
+
+function imgHandler() {
+  image.classList.toggle('open')
+}
+
+
